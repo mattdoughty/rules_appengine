@@ -209,6 +209,7 @@ def py_appengine_binary(name, srcs, configs, deps = [], data = [], overwrite_app
         deps = deps,
         data = data,
         main = srcs[0],  # no entry point, use arbitrary source file
+        python_version = "PY2",
     )
     py_appengine_binary_base(
         name = name,
