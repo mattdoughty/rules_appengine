@@ -22,18 +22,21 @@ py_library(
         ["**/*"],
         exclude = ["**/*.py"],
     ),
+    python_version = "PY2",
 )
 
 py_binary(
     name = "dev_appserver",
     srcs = ["dev_appserver.py"],
     deps = [":appengine"],
+    python_version = "PY2",
 )
 
 py_binary(
     name = "appcfg",
     srcs = ["appcfg.py"],
     deps = [":appengine"],
+    python_version = "PY2",
 )
 
 py_library(
@@ -143,6 +146,7 @@ py_library(
 py_library(
     name = "webapp2-latest",
     deps = [":webapp2-2.5.2"],
+    python_version = "PY2",
 )
 
 py_library(
